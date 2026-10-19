@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="PUPPET opens a physical robotics laboratory to remote researchers through a continuously synchronized VR replica, with trial validation built into the experimental workflow.">
+    <title>PUPPET: Presence, Embodiment, and Teleoperation</title>
+    <meta property="og:title" content="PUPPET: Physical-Unified Platform for Presence, Embodiment, and Teleoperation">
+    <meta property="og:description" content="Remote access to a real robotics lab through a synchronized VR replica, with built-in validation of every trial's experimental record.">
+    <meta property="og:image" content="assets/puppet-overview.jpg">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=1">
+  </head>
+  <body>
+    <main id="top">
+      <section class="paper-head content-width">
+        <h1><span class="acronym">PUPPET</span>: Physical-Unified Platform for<br class="desktop-break"> Presence, Embodiment, and Teleoperation</h1>
+        <div class="authors" aria-label="Authors">
+          <div class="author"><span class="author-name">Mahika Vats</span><span class="affiliation">CyPhy Life, IE University, Spain</span></div>
+          <div class="author"><span class="author-name">Milan Groshev</span><span class="affiliation">CyPhy Life, IE University, Spain</span></div>
+          <div class="author"><span class="author-name">Eduardo Castelló Ferrer</span><span class="affiliation">CyPhy Life, IE University, Spain</span></div>
+        </div>
+        <p class="venue">Submitted to the IEEE International Conference on Robotics and Automation (ICRA 2027)</p>
+        <div class="resource-links" aria-label="Project resources">
+          <a class="resource-button" href="https://github.com/mvats1310/PUPPET" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .9A11.1 11.1 0 0 0 8.49 22.53c.55.1.76-.24.76-.54v-2.1c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.93 2.02 3.26 1.44.1-.72.39-1.2.7-1.48-2.48-.28-5.1-1.24-5.1-5.52 0-1.22.44-2.22 1.16-3-.12-.28-.5-1.42.11-2.95 0 0 .95-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.1-1.43 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.16 1.78 1.16 3 0 4.3-2.62 5.23-5.12 5.51.4.35.75 1.02.75 2.06v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></svg> Code</a>
+          <!-- ARXIV: replace href="#" with the arXiv URL (e.g. https://arxiv.org/abs/XXXX.XXXXX) and delete the class "is-placeholder" -->
+          <a class="resource-button is-placeholder" href="#" aria-disabled="true" title="arXiv link coming soon"><span class="arxiv-icon">ar<span>X</span>iv</span></a>
+          <a class="resource-button" href="https://www.youtube.com/watch?v=4gtnZbClshc" target="_blank" rel="noreferrer"><svg class="video-icon" viewBox="0 0 16 16" aria-hidden="true"><path fill="currentColor" d="M4 2.2c-.55-.32-1.25.08-1.25.72v10.16c0 .64.7 1.04 1.25.72l8.5-5.08a.84.84 0 0 0 0-1.44L4 2.2Z"/></svg> Video</a>
+          <a class="resource-button" href="#bibtex"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.5 6C4 6 2.5 8 2.5 10.5S4 15 6.2 15c-.3 1.6-1.3 2.6-2.7 3.1l.6 1.4C7.4 18.6 10 16 10 11.4 10 8.2 8.6 6 6.5 6Zm11 0C15 6 13.5 8 13.5 10.5S15 15 17.2 15c-.3 1.6-1.3 2.6-2.7 3.1l.6 1.4c3.3-.9 5.9-3.5 5.9-8.1C21 8.2 19.6 6 17.5 6Z"/></svg> BibTeX</a>
+        </div>
+      </section>
+
+      <section id="video" class="video-section content-width" aria-label="PUPPET project video">
+        <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/4gtnZbClshc?autoplay=1&amp;mute=1&amp;controls=1&amp;playsinline=1&amp;rel=0" title="PUPPET project video" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      </section>
+
+      <section class="paper-section content-width abstract-section" id="abstract">
+        <h2>Abstract</h2>
+        <p>Remote access to robotics hardware does not by itself guarantee usable experimental data. A teleoperated trial can complete the task and still produce an incomplete or inconsistent record. PUPPET aims to solve this problem by presenting a cyber-physical framework that opens a physical robotics laboratory through a continuously synchronized VR replica of the robot, surrounding environment, and task objects. In addition, PUPPET integrates a trial validation pipeline built into the experimental workflow. We evaluated PUPPET in a within-subject study with 30 participants, who performed the same table-to-shelf object-transfer task in person, through 2D teleoperation, and through PUPPET. VR reduced post-learning completion time by 27.7% over 2D (68.7 s vs. 95.0 s), statistically indistinguishable from in-person execution (72.1 s). It also produced more validation-ready (85.6% vs. 66.0%) and intervention-free (89.7% vs. 67.2%) trials. With PUPPET we show that modality shapes the remote task performance and the reusability of the resulting experimental record.</p>
+      </section>
+
+      <section class="paper-section content-width" id="why">
+        <div class="section-heading"><h2>Why it matters</h2></div>
+        <figure class="editorial-figure centered-figure why-figure"><img src="assets/puppet-overview.jpg" alt="Illustration: a user in a VR headset works inside a virtual replica of a lab, while the real TIAGo robot performs the same action in the physical lab" width="1600" height="800"><figcaption>PUPPET gives remote users an immersive virtual representation of the physical robotics laboratory, so they interact with the real robot through the replicated VR environment.</figcaption></figure>
+        <div class="prose">
+          <p>Real robots and laboratory setups are expensive, geographically fixed, and hard to replicate, so running and repeating real-robot experiments still largely depends on being in the lab. Remote laboratories, digital twins, and VR teleoperation have lowered that barrier, but they are mostly judged on task performance, interface usability, or control quality.</p>
+          <p>PUPPET starts from a different observation: <strong>successful teleoperation is not the same as successful experimentation.</strong> A remotely controlled trial can finish the task and still leave behind data that is incomplete, inconsistent, or unusable. In many experiments the state of the workspace is part of the data too, such as where the object was, how it moved, and what surrounded it.</p>
+          <p>PUPPET gives remote researchers access to a real lab through a synchronized VR environment that holds the robot, the task objects, and the workspace in one virtual space. Data collection and validation run as part of the workflow, so every trial is judged both on whether the task succeeded and on whether its record is complete, consistent, and reusable.</p>
+        </div>
+      </section>
+
+      <section class="paper-section content-width" id="system">
+        <div class="section-heading"><h2>System design</h2></div>
+        <p class="section-intro">PUPPET connects a physical laboratory and its virtual replica through three layers: interaction and control, synchronization, and integrated data collection and validation. A remote user enters the virtual lab, controls the physical TIAGo through its virtual counterpart, and performs an object-transfer task in the real workspace.</p>
+        <figure class="editorial-figure centered-figure system-figure"><img src="assets/system-architecture.jpg" alt="PUPPET architecture: the physical laboratory with OptiTrack, server, WiFi 6, VR interface and TIAGo; the interaction and control loop; the Unity virtual laboratory; and the data collection and validation layer" width="1584" height="981"><figcaption>The physical and virtual laboratories are connected through interaction and control, synchronization, and an integrated data collection and validation layer. Letters correspond to the components below; numbered arrows show the main control and data flows.</figcaption></figure>
+        <ol class="component-list">
+          <li class="hw"><strong><b>A</b>VR interface</strong><span>Meta Quest 3 with haptic controller straps: 6-DOF head tracking, hand tracking, joystick input, and vibro-tactile feedback.</span></li>
+          <li class="hw"><strong><b>B</b>Server</strong><span>Renders the virtual lab, hosts the robot control interfaces, and closes the control loop at 100 Hz.</span></li>
+          <li class="hw"><strong><b>C</b>WiFi 6</strong><span>A commercial access point carries commands to the robot in the lab.</span></li>
+          <li class="hw"><strong><b>D</b>TIAGo robot</strong><span>Differential-drive base, 7-DOF torque-controlled arm, head-mounted RGB-D camera, and an onboard ROS control stack.</span></li>
+          <li class="hw"><strong><b>E</b>OptiTrack</strong><span>Motion capture at 120 Hz with sub-millimeter accuracy tracks the robot base and the task objects.</span></li>
+          <li><strong><b>F</b>Virtual laboratory</strong><span>Unity and the Meta VR SDK reproduce the full lab, including walls, tables, shelves, TIAGo, and the task object.</span></li>
+          <li><strong><b>G</b>Synchronization</strong><span>The NatNet ROS driver and ROS–TCP connector place every tracked object in the virtual scene in real time.</span></li>
+          <li><strong><b>H</b>Data collection &amp; validation</strong><span>ROS bags, multi-view video, metadata, and motion capture are stored per trial and validated automatically.</span></li>
+        </ol>
+        <div class="results-grid four" aria-label="System timing">
+          <article class="result"><strong>30.6<small> ms</small></strong><h3>command-to-motion</h3><p>Median VR command-to-motion feedback latency.</p></article>
+          <article class="result"><strong>7.15<small> ms</small></strong><h3>physical-to-virtual</h3><p>Median delay from physical motion to the virtual update.</p></article>
+          <article class="result"><strong>100<small> Hz</small></strong><h3>control loop</h3><p>Rate at which the server closes the control loop.</p></article>
+          <article class="result"><strong>120<small> Hz</small></strong><h3>motion capture</h3><p>OptiTrack 6-DOF poses of the robot and objects, sub-millimeter.</p></article>
+        </div>
+      </section>
+
+      <section class="paper-section content-width" id="control">
+        <div class="section-heading"><h2>Embodied control</h2></div>
+        <p class="section-intro">Inside the virtual laboratory, control is embodied: the user's arm becomes the TIAGo arm and the user's head becomes the TIAGo head. The whole experimental workspace serves as both the teleoperation interface and a live view of robot state, sensor data, and task progress.</p>
+        <div class="pipeline" aria-label="How the user's body maps onto TIAGo">
+          <article><span>01</span><h3>Head → TIAGo head</h3><p>Headset orientation drives the robot's head, so the viewpoint follows the user's gaze. Users can look one way while reaching another.</p></article>
+          <article><span>02</span><h3>Hand → arm</h3><p>The tracked hand pose drives the end-effector directly, with motion planning keeping the arm inside its kinematic limits. The gripper takes discrete open and close commands.</p></article>
+          <article><span>03</span><h3>Joystick → base</h3><p>The controller joystick drives TIAGo's mobile base, so one task covers navigation, manipulation, and the full teleoperation pipeline.</p></article>
+        </div>
+      </section>
+
+      <section class="paper-section content-width" id="validation">
+        <div class="section-heading"><h2>Data validation pipeline</h2></div>
+        <p class="section-intro">The streams that keep the virtual lab synchronized are also written to disk as the experimental record. Each trial stores a ROS bag with joint states, commanded velocities, base odometry, gripper state, end-effector pose, and the OptiTrack poses of the robot and task object, together with trial metadata and multi-view video at 30 fps. Validation runs automatically when a trial closes and produces a per-trial report.</p>
+        <div class="prose">
+          <p>No established standard exists for validating teleoperated robotics data, so PUPPET uses four quality dimensions drawn from prior work on teleoperation and demonstration quality: <strong>completeness</strong>, <strong>temporal continuity</strong>, <strong>signal plausibility</strong>, and <strong>execution consistency</strong>. They are implemented as six rule families.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="rules-table">
+            <thead><tr><th>Rule</th><th>Quality dimension</th><th>Check</th><th>Criteria</th><th>Outcome</th></tr></thead>
+            <tbody>
+              <tr><td>R1a</td><td>Completeness</td><td>Record completeness</td><td>Required metadata, files, topics, telemetry columns, and minimum sample count must be present.</td><td><span class="badge badge-fail">Fail</span></td></tr>
+              <tr><td>R1b</td><td>Completeness</td><td>Validation metadata</td><td>Missing manual- or video-validation information is flagged for inspection.</td><td><span class="badge badge-review">Review</span></td></tr>
+              <tr><td>R2</td><td>Temporal continuity</td><td>Telemetry continuity</td><td>Required streams &gt; 50% missing, end-effector pose &gt; 90% missing, or largest timestamp gap &gt; 1 s.</td><td><span class="badge badge-review">Review</span></td></tr>
+              <tr><td>R3</td><td>Signal plausibility</td><td>Object tracking</td><td>Successful trials whose object path is &lt; 0.02 m, or movement &lt; 0.005 m on all axes.</td><td><span class="badge badge-review">Review</span></td></tr>
+              <tr><td>R4</td><td>Signal plausibility</td><td>Robot motion</td><td>Expected gripper, arm, torso, or end-effector motion is too small, or joint jerk exceeds 5 × 10<sup>4</sup>.</td><td><span class="badge badge-review">Review</span></td></tr>
+              <tr><td>R5</td><td>Execution integrity &amp; consistency</td><td>Technician intervention</td><td>More than two minor interventions, any major intervention in T2–T3, or inconsistent intervention metadata.</td><td><span class="badge badge-review">Review</span></td></tr>
+              <tr><td>R6</td><td>Execution integrity &amp; consistency</td><td>Cross-trial consistency</td><td>Repeated-trial variation in completion time, path length, gripper chatter, or joint jerk exceeds predefined limits.</td><td><span class="badge badge-review">Review</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-caption">Validation rules implementing the four data-quality dimensions used in the study.</p>
+        <div class="outcomes" aria-label="Rule outcomes">
+          <span><span class="badge badge-pass">Pass</span> no quality issues detected</span>
+          <span><span class="badge badge-review">Review</span> complete, but anomalous</span>
+          <span><span class="badge badge-fail">Fail</span> record is unrecoverable</span>
+        </div>
+      </section>
+
+      <section class="paper-section content-width" id="study">
+        <div class="section-heading"><h2>User study</h2></div>
+        <p class="section-intro">30 participants from STEM backgrounds did the same mobile-manipulation task under three conditions, in counterbalanced order (balanced Latin square). They used TIAGo to pick up a plastic cylinder from a table and place it on a shelf, starting 1.7 m away. Each condition had three repetitions: T1 served as the learning trial, and T2–T3 were the post-learning trials used for the primary analysis.</p>
+        <div class="pipeline" aria-label="Study conditions">
+          <article class="condition-card c-inperson"><span class="maps">Baseline</span><h3>In-person</h3><p>Participants operated TIAGo while physically in the lab, with direct sight of the robot. Keyboard for the arm, joystick for the base.</p></article>
+          <article class="condition-card c-2d"><span class="maps">Conventional remote</span><h3>2D</h3><p>Remote operation using three camera feeds on a single monitor. Keyboard for the arm, joystick for the base.</p></article>
+          <article class="condition-card c-vr"><span class="maps">PUPPET</span><h3>VR</h3><p>Remote operation through PUPPET's synchronized virtual lab, using a Meta Quest 3 headset and haptic controller straps.</p></article>
+        </div>
+        <p class="section-intro" style="margin-bottom:14px">The robot, task, and ROS control pipeline were the same in every condition, so the comparison isolates the access modality itself. The study tested three hypotheses:</p>
+        <ul class="hypotheses">
+          <li><span>H1</span><div><strong>Task effectiveness.</strong> PUPPET supports more effective remote task execution than 2D teleoperation: comparable completion and lower post-learning completion time.</div></li>
+          <li><span>H2</span><div><strong>Reliability.</strong> PUPPET yields more validation-ready trial records and fewer technician interventions, with consistency maintained across repeats.</div></li>
+          <li><span>H3</span><div><strong>User experience.</strong> Users report lower workload, higher usability, and higher task confidence in VR than in 2D.</div></li>
+        </ul>
+      </section>
+
+      <section class="paper-section content-width results-section" id="results">
+        <div class="section-heading"><h2>Results</h2></div>
+        <p class="section-intro">Every trial in every condition completed the task, so task success alone could not tell the three access modes apart. The differences showed up in speed, in how much assistance was needed, and in the quality of the record each trial left behind.</p>
+        <div class="results-grid">
+          <article class="result"><strong>27.7%</strong><h3>faster than 2D</h3><p>Post-learning completion time was 68.7 s in VR vs. 95.0 s in 2D (<em>p</em> = .011), on par with in-person (72.1 s).</p></article>
+          <article class="result"><strong>85.6%</strong><h3>validation-ready trials</h3><p>VR trials passed every automated check far more often than 2D trials (66.0%, <em>p</em> = .012).</p></article>
+          <article class="result"><strong>89.7%</strong><h3>intervention-free trials</h3><p>VR trials needed technician help far less often than 2D (67.2%, <em>p</em> = .007), close to in-person (93.1%).</p></article>
+        </div>
+
+        <div class="result-detail">
+          <h3><span class="hyp">H1</span>Task effectiveness</h3>
+          <div class="tabs" data-tabs>
+            <div class="tab-list" role="tablist" aria-label="Task performance charts">
+              <button role="tab" id="tab-h1a" aria-controls="panel-h1a" aria-selected="true">(a) Post-learning execution</button>
+              <button role="tab" id="tab-h1b" aria-controls="panel-h1b" aria-selected="false" tabindex="-1">(b) Across trials</button>
+            </div>
+            <figure class="editorial-figure centered-figure tab-panel" role="tabpanel" id="panel-h1a" aria-labelledby="tab-h1a"><img src="assets/fig3a.png" alt="Bar chart of post-learning completion time: in-person 72.1 s, VR 68.7 s, 2D 95.0 s; VR vs 2D p = .011, in-person vs VR p = 1.000"><figcaption>Mean post-learning (T2–T3) completion time per condition.</figcaption></figure>
+            <figure class="editorial-figure centered-figure tab-panel" role="tabpanel" id="panel-h1b" aria-labelledby="tab-h1b" hidden><img src="assets/fig3b.png" alt="Line chart of completion time across trials T1 to T3: VR 147.7, 71.7, 65.6 s; 2D 181.2, 104.2, 85.7 s; in-person 174.3, 75.3, 68.9 s"><figcaption>Completion time across the learning trial (T1) and the execution trials (T2, T3).</figcaption></figure>
+          </div>
+          <p>After the learning trial, participants finished the task in 68.66 s through PUPPET, 94.96 s through 2D teleoperation, and 72.10 s in person: a 27.7% reduction from 2D to VR. Twenty of the 30 participants were faster in VR than in 2D, and the difference was significant (<em>W</em> = 109.00, <em>p</em> = .011, <em>r</em> = −.531). Completion time also differed across the three conditions overall (χ²(2) = 6.10, <em>p</em> = .047), and condition order had no detectable effect (<em>p</em> = .639).</p>
+          <p>Learning looked different too. On T1, participants were already faster through PUPPET (147.7 s) than through 2D (181.2 s) or in person (174.3 s). All conditions improved sharply after that, but VR times were stable between T2 and T3 (71.7 s → 65.6 s) while 2D was still improving (104.2 s → 85.7 s). <strong>H1 was supported.</strong></p>
+        </div>
+
+        <div class="result-detail">
+          <h3><span class="hyp">H2</span>Reliability of remote experimentation</h3>
+          <figure class="editorial-figure centered-figure"><img src="assets/fig4.png" alt="Three charts: (a) validation outcomes, Pass 79% in-person, 66% 2D, 86% VR; (b) data issues by condition; (c) intervention-free trials 93.1% in-person, 67.2% 2D, 89.7% VR"><figcaption>(a) Validation outcomes, (b) system and data issues (non-exclusive; top categories only), and (c) intervention-free execution trials.</figcaption></figure>
+          <p style="margin-top:28px">85.6% of VR trials were validation-ready against 66.0% of 2D trials, a significant difference at the participant level (<em>W</em> = 21.00, <em>p</em> = .012, <em>r</em> = .691). No trial in any condition was assigned Fail. Every flagged trial landed in Review, so the problems we saw were partial or implausible data, not unrecoverable loss.</p>
+          <p>The issue profile shows <em>why</em> trials were flagged. Near-flat object tracking affected all conditions at similar rates (6.9% in-person, 5.6% 2D, 6.7% VR), which points to the physical sensing rather than the access mode. Large timestamp gaps appeared only in 2D (3.3%). Missing object-state data affected 10.3% of in-person and 6.7% of 2D trials and <strong>never occurred in VR</strong>. Our explanation is that the tracked state is always visible inside the virtual lab: when an object freezes or disappears, users notice it during the trial. 89.7% of VR trials also ran without technician help, against 67.2% in 2D and 93.1% in person (<em>W</em> = 24.50, <em>p</em> = .007, <em>r</em> = −.680).</p>
+          <figure class="editorial-figure result-figure"><img src="assets/fig5.png" alt="Top-down object trajectories for execution trials; the VR median path is nearly straight while 2D and in-person median paths bow out by about one meter"><figcaption>Task-aligned object trajectories during execution trials (T2–T3). Light lines are individual executions; bold lines are each condition's median.</figcaption></figure>
+          <p>Object trajectories show that embodied control changed <em>how</em> people did the task. The VR median path was clearly more direct: median peak lateral deviation was 0.713 m in VR, 0.925 m in 2D, and 1.028 m in person, although the overall condition effect did not reach significance (χ²(2) = 5.15, <em>p</em> = .076).</p>
+          <p>That freedom did not cost consistency. T2–T3 repeatability did not differ between VR and 2D for RMS distance (<em>p</em> = .956), dynamic-time-warping distance (<em>p</em> = .956), or path-length difference (<em>p</em> = .312). These comparisons show only that no difference was detected. <strong>H2 was supported.</strong></p>
+        </div>
+
+        <div class="result-detail">
+          <h3><span class="hyp">H3</span>User experience</h3>
+          <figure class="editorial-figure result-figure result-figure-right"><img src="assets/fig6.png" alt="Grouped bar chart of mean scores: workload 1.96 in-person, 2.81 2D, 2.26 VR; usability 3.62, 2.43, 3.78; task confidence 4.43, 3.50, 4.43"><figcaption>Workload, usability, and task confidence on a common 0–5 scale. SUS is normalized for display; statistics use standard 0–100 SUS scores.</figcaption></figure>
+          <p>VR showed lower workload than 2D (2.26 vs. 2.81), higher usability (3.78 vs. 2.43), and higher task confidence (4.43 vs. 3.50). In-person scores were 1.96, 3.62, and 4.43. 18 of 30 participants reported lower NASA-TLX workload in VR (<em>W</em> = 73.00, <em>p</em> = .009, <em>r</em> = −.584), and 21 of 30 reported higher confidence (<em>W</em> = 31.50, <em>p</em> &lt; .001, <em>r</em> = .806).</p>
+          <p>VR produced lower workload than 2D even though it is the more complex system, and task confidence in VR matched in-person operation. The cost of remote operation seems to come from having to rebuild spatial relationships from a few camera views, not from system complexity.</p>
+          <p>Participants also felt in control of the real robot. Sense of agency in VR was well above the neutral midpoint of 3 (<em>W</em> = 0.00, <em>p</em> &lt; .001, <em>r</em> = 1.00). <strong>H3 was supported.</strong></p>
+          <div class="table-wrap" style="clear:both">
+            <table class="agency-table">
+              <thead><tr><th>Agency measure (VR, 1–5)</th><th>Mean</th><th>SD</th><th>Median</th></tr></thead>
+              <tbody>
+                <tr><td>Perceived control over the robot</td><td class="num">4.33</td><td class="num">0.55</td><td class="num">4.00</td></tr>
+                <tr><td>Robot motion reflected user actions</td><td class="num">4.27</td><td class="num">0.69</td><td class="num">4.00</td></tr>
+                <tr><td>Robot responded as expected</td><td class="num">4.33</td><td class="num">0.61</td><td class="num">4.00</td></tr>
+                <tr><td>Overall agency</td><td class="num"><strong>4.31</strong></td><td class="num">0.53</td><td class="num">4.33</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="result-detail">
+          <h3>What we learned</h3>
+          <p class="result-conclusion"><strong>Takeaway:</strong> a remotely controlled trial can succeed as a task and still fail as a recorded experiment. Task success did not separate the three access modes, but the experimental record did. Through PUPPET, trials were validation-ready and intervention-free far more often than through 2D teleoperation, users settled into the interface faster, and the virtual lab worked as a continuous check on the data being recorded. Data quality deserves to be treated as an outcome measure in its own right.</p>
+        </div>
+
+        <div class="result-detail">
+          <h3>Limitations and future work</h3>
+          <p>We compared complete interaction methods, so the effects of spatial visualization and embodied control cannot yet be separated. The study used one robot, one structured table-to-shelf task, and one lab. The virtual lab is modeled by hand and relies on external motion capture, which made marker loss the main source of VR data issues (6.7% tracking anomalies). Next steps are markerless environment synchronization, representing people inside the virtual lab, and validating PUPPET across tasks, platforms, and distributed sites.</p>
+        </div>
+      </section>
+
+      <section class="paper-section content-width bibtex-section" id="bibtex">
+        <div class="section-heading"><h2>BibTeX</h2></div>
+        <div class="code-block">
+          <button class="copy-button" type="button" data-copy="bibtex-code">Copy</button>
+          <pre><code id="bibtex-code">@misc{vats2027puppet,
+  title  = {PUPPET: Physical-Unified Platform for Presence,
+            Embodiment, and Teleoperation},
+  author = {Vats, Mahika and Groshev, Milan and
+            Castell{\'o} Ferrer, Eduardo},
+  year   = {2027},
+  note   = {Submitted to the IEEE International Conference
+            on Robotics and Automation (ICRA)},
+  url    = {https://github.com/mvats1310/PUPPET}
+}</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>PUPPET · Submitted to ICRA 2027</span><a href="https://github.com/mvats1310/PUPPET" target="_blank" rel="noreferrer">Project repository ↗</a></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

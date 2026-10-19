@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="PUP">
+  <title>PUP</title>
+  <style>
+    .mark { stroke: #202124; }
+    @media (prefers-color-scheme: dark) { .mark { stroke: #ffffff; } }
+  </style>
+  <g class="mark" transform="translate(17.9 163.4) scale(0.886)" fill="none" stroke-width="44.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 22.25 186.75 L 22.25 22.25 L 85.25 22.25 A 45 45 0 0 1 85.25 112.25 L 22.25 112.25"/>
+      <path d="M 208.75 22.25 L 208.75 126.75 A 60 60 0 0 0 328.75 126.75 L 328.75 22.25"/>
+      <path d="M 407.25 186.75 L 407.25 22.25 L 470.25 22.25 A 45 45 0 0 1 470.25 112.25 L 407.25 112.25"/>
+  </g>
+</svg>
