@@ -21,20 +21,3 @@ document.querySelectorAll('[data-tabs]').forEach((tabs) => {
   });
 });
 
-// Copy-to-clipboard for the BibTeX block.
-document.querySelectorAll('[data-copy]').forEach((btn) => {
-  btn.addEventListener('click', async () => {
-    const text = document.getElementById(btn.dataset.copy).textContent;
-    try {
-      await navigator.clipboard.writeText(text);
-      btn.textContent = 'Copied';
-    } catch {
-      btn.textContent = 'Press ⌘C';
-      const range = document.createRange();
-      range.selectNodeContents(document.getElementById(btn.dataset.copy));
-      getSelection().removeAllRanges();
-      getSelection().addRange(range);
-    }
-    setTimeout(() => { btn.textContent = 'Copy'; }, 1800);
-  });
-});
